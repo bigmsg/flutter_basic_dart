@@ -52,6 +52,7 @@ void main() {
   var items3 = [...items2, 4, 5];
   print(items3);
 
+  // 함수 arguments  전달방
   something('홍길동', age: 21, height: 175);
 
 }
@@ -60,7 +61,11 @@ myPrint(num str) {
   print('$str');
 }
 
-
+/*
+parameter 선언방법
+필수:
+옵션: {} --> 함수호출시 옵션 argument, argument명은 필수,
+ */
 void something(String name, {int age, int height = 175}) { // {} 옵션인자임: key가 필수임
   print('$name $age');
 
